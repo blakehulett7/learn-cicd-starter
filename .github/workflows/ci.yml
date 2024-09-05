@@ -36,3 +36,6 @@ jobs:
       - name: Run Formatting Tests
         run: test -z $(go fmt ./...)
 
+      - name: Run Linting Tests
+        uses: dominikh/staticcheck-action
+
